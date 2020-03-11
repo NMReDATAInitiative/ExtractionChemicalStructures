@@ -8,6 +8,8 @@ Extension|Source|Extraction tool
 .sdf|multiple open sources|[OpenBabel](#openbabel)
 .mnova|MestreNova|[Mnova](#mnova)
 
+Visualisation can be done after [conversion](#openbabel) into the open .mol files format. The .mol file can be displayed using a specialized tools (nice for <script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jmol.php?source=https://static.molinstincts.com/sdf_3d/cholesterol-3D-structure-CT1001897301.sdf&link=3D structures"></script>) or as a fixed image after [conversion](#openbabel) of .mol into .png (or other format).
+
 ## OpenBabel
 Conversion into .mol file using [OpenBabel](https://open-babel.readthedocs.io/en/latest/)
 ```
@@ -29,7 +31,7 @@ babel -isdf  'mymols.cdx' -omol 'outputfile.mol' //if the data are not in .mol f
 ```
 # Visualization of .mol files
 
-extension|source|Visualization tool|demo
+Extension|Source|Visualization tool|Demo
 ----|----|---|---
 .mol|any structure|[JSmol](http://wiki.jmol.org/index.php/Jmol_JavaScript_Object#JSmol)|[Structure of indole](https://www.simolecule.com/cdkdepict/depict/bow/svg?smi=indole%0A%20%20NextMove10101914192D%0A%0A%20%209%2010%20%200%20%200%20%200%20%200%20%200%20%200%20%200%20%200999%20V2000%0A%20%20%20%201.7200%20%20%20-1.2100%20%20%20%200.0000%20N%20%20%200%20%200%0A%20%20%20%202.6000%20%20%20-0.0000%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20%201.7200%20%20%20%201.2100%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20%200.2900%20%20%20%200.7500%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20-1.0100%20%20%20%201.5000%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20-2.3100%20%20%20%200.7500%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20-2.3100%20%20%20-0.7500%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20-1.0100%20%20%20-1.5000%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20%200.2900%20%20%20-0.7500%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%201%20%202%20%201%20%200%0A%20%202%20%203%20%202%20%200%0A%20%203%20%204%20%201%20%200%0A%20%204%20%205%20%202%20%200%0A%20%205%20%206%20%201%20%200%0A%20%206%20%207%20%202%20%200%0A%20%207%20%208%20%201%20%200%0A%20%208%20%209%20%202%20%200%0A%20%201%20%209%20%201%20%200%0A%20%204%20%209%20%201%20%200%0AM%20%20END%0A) 
 .mol|2D structure|[JSme](https://www.peter-ertl.com/jsme/)|<script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jmol.php?source=https://static.molinstincts.com/sdf_3d/cholesterol-3D-structure-CT1001897301.sdf&link=3D structure of cholesterol"></script>
