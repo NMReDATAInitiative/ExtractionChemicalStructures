@@ -4,7 +4,7 @@ Important chemistry files including chemical structures
 File extension|Origin|Extraction tool|Example
 ----|----|---|---
 .cdx|ChemDraw|[OpenBabel](#openbabel)|[benzoic.cdx](benzoic.cdx) [structure.cdxml](structure.cdxml) 
-.g03|Gaussia98/03|[OpenBabel](#openbabel)|
+.g03|Gaussia98/03|[OpenBabel](#openbabel)|[melezitose_betternmrJ.log](melezitose_betternmrJ.log)
 .sdf|multiple open sources|[OpenBabel](#openbabel)|[compound1.nmredata.sdf](compound1.nmredata.sdf)
 .mol|multiple open sources|no conversion|
 .mnova|MestreNova|[Mnova](#mnova)|[vaniline.mnova](Vaniline_attributed.mnova)
