@@ -19,15 +19,22 @@ Important chemistry files including chemical structures
 
 extension|source|Extraction tool
 ----|----|---
-.mol|multiple source|[OpenBabel](http://openbabel.org/wiki/Main_Page)
-.cdx|ChemDraw|[OpenBabel](http://openbabel.org/wiki/Main_Page)
+.cdx|ChemDraw|[OpenBabel](https://open-babel.readthedocs.io/en/latest/)
+.g03|Gaussia98/03|[OpenBabel](https://open-babel.readthedocs.io/en/latest/)
+.sdf|multiple open sources|[OpenBabel](https://open-babel.readthedocs.io/en/latest/)
 .mnova|MestreNova|[Mnova](https://mestrelab.com/download/mnova/)
 
 ## OpenBabel
 
-conversion of .cdx 
+conversion into .mol file using [OpenBabel](https://open-babel.readthedocs.io/en/latest/)
 ```
-babel -icdx  'mymols.cdx' -omol 'outputfile.mol'
+obabel inputfile.sdf -O outputfile.mol
+obabel inputfile.cdx -O outputfile.mol
+obabel -ig03 inputfile.log -O outputfile.mol
+```
+conversion into image using OpenBabel
+```
+obabel outputfile.mol -O outputfile.png
 ```
 ## Mnova
 Requires a [licence](https://www.unige.ch/sciences/chiorg/mnova/).
@@ -39,6 +46,7 @@ babel -isdf  'mymols.cdx' -omol 'outputfile.mol' //if the data are not in .mol f
 ```
 # Visualization of .mol files
 
-extension|source|Visualization tool
-----|----|---
-.mol|any source|[JSmol](http://wiki.jmol.org/index.php/Jmol_JavaScript_Object#JSmol)
+extension|source|Visualization tool|demo
+----|----|---|---
+.mol|any structure|[JSmol](http://wiki.jmol.org/index.php/Jmol_JavaScript_Object#JSmol)|[Example of a pop-up of a 2D molecular structure](https://www.simolecule.com/cdkdepict/depict/bow/svg?smi=indole%0A%20%20NextMove10101914192D%0A%0A%20%209%2010%20%200%20%200%20%200%20%200%20%200%20%200%20%200%20%200999%20V2000%0A%20%20%20%201.7200%20%20%20-1.2100%20%20%20%200.0000%20N%20%20%200%20%200%0A%20%20%20%202.6000%20%20%20-0.0000%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20%201.7200%20%20%20%201.2100%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20%200.2900%20%20%20%200.7500%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20-1.0100%20%20%20%201.5000%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20-2.3100%20%20%20%200.7500%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20-2.3100%20%20%20-0.7500%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20-1.0100%20%20%20-1.5000%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20%200.2900%20%20%20-0.7500%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%201%20%202%20%201%20%200%0A%20%202%20%203%20%202%20%200%0A%20%203%20%204%20%201%20%200%0A%20%204%20%205%20%202%20%200%0A%20%205%20%206%20%201%20%200%0A%20%206%20%207%20%202%20%200%0A%20%207%20%208%20%201%20%200%0A%20%208%20%209%20%202%20%200%0A%20%201%20%209%20%201%20%200%0A%20%204%20%209%20%201%20%200%0AM%20%20END%0A) 
+<script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jmol.php?source=https://static.molinstincts.com/sdf_3d/cholesterol-3D-structure-CT1001897301.sdf&link=Example of pop-up of a 3D structure"></script>
