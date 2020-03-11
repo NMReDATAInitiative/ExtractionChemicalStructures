@@ -13,3 +13,26 @@ alanine|InChI|InChIKey
 DL-alanine|InChI=1S/C3H7NO2/c1-2(4)3(5)6/h2H,4H2,1H3,(H,5,6)           |QNAYBMKLOCPYGJ-UHFFFAOYSA-N
 L-alanine|InChI=1S/C3H7NO2/c1-2(4)3(5)6/h2H,4H2,1H3,(H,5,6)/t2-/m0/s1 |QNAYBMKLOCPYGJ-REOHCLBHSA-N
 D-alanine|InChI=1S/C3H7NO2/c1-2(4)3(5)6/h2H,4H2,1H3,(H,5,6)/t2-/m1/s1 |QNAYBMKLOCPYGJ-UWTATZPHSA-N
+# Chemical structures in chemistry
+Important chemistry files including chemical structures
+
+extension|source|tool
+----|----|---
+.mol|multiple source|OpenBabel
+.cdx|ChemDraw|OpenBabel
+.mnova|MestreNova|Mnova
+
+## OpenBabel
+http://openbabel.org/wiki/Main_Page
+
+conversion of .cdx 
+```
+babel -icdx  'mymols.cdx' -omol 'outputfile.mol'
+```
+## Mnova
+https://mestrelab.com/download/mnova/
+
+Extraction done using a script called from unix:
+```
+/usr/bin/mnova "/usr/username/myScript.qs" -sf "myFunction",0.1,10,true,off
+```
