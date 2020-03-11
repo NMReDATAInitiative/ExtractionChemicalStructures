@@ -1,0 +1,118 @@
+Naphtalene
+  Mnova   01061509572D
+
+ 10 11  0  0  0  0  0  0  0  0999 V2000
+  -23.5294   74.7159    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   17.6471   50.9427    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   17.6471    3.3962    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -23.5294  -20.3771    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -64.7059    3.3962    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -64.7059   50.9427    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   58.8235   74.7159    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  100.0000   50.9427    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  100.0000    3.3962    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   58.8235  -20.3771    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  2  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  2  0  0  0  0
+  1  6  1  0  0  0  0
+  2  7  1  0  0  0  0
+  7  8  2  0  0  0  0
+  8  9  1  0  0  0  0
+  9 10  2  0  0  0  0
+ 10  3  1  0  0  0  0
+M  END
+>  <NMREDATA_VERSION>
+1.1\
+
+>  <NMREDATA_LEVEL>
+0\
+
+>  <NMREDATA_ID>
+Record=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+Path=compound1.nmredata.sdf\
+
+>  <NMREDATA_SOLVENT>
+CDCl3\
+
+>  <NMREDATA_ASSIGNMENT>
+H1, 7.8580, H1\
+1, 127.8835, 1\
+2, 133.4585, 2\
+3, 133.4585, 3\
+H4, 7.8580, H4\
+4, 127.8835, 4\
+H5, 7.4910, H5\
+5, 125.8232, 5\
+H6, 7.4910, H6\
+6, 125.8232, 6\
+H7, 7.8580, H7\
+7, 127.8835, 7\
+H8, 7.4910, H8\
+8, 125.8232, 8\
+H9, 7.4910, H9\
+9, 125.8232, 9\
+H10, 7.8580, H10\
+10, 127.8835, 10\
+
+>  <NMREDATA_J>
+H1, H4, 0.20\
+H1, H5, 1.30\
+H1, H6, 7.50\
+H1, H7, 1.30\
+H4, H5, 7.50\
+H4, H6, 1.30\
+H4, H10, 1.30\
+H5, H6, 8.00\
+H7, H8, 7.50\
+H7, H9, 1.30\
+H7, H10, 0.20\
+H8, H9, 8.00\
+H8, H10, 1.20\
+H9, H10, 7.50\
+
+>  <NMREDATA_1D_1H>
+Larmor=500.13\
+Pulseprogram=zg ;optional in V1\
+Spectrum_Location=file:djnaphtalene/10/pdata/1/\
+7.8580, S=dq, L=H1, E=3581343.6115, J=7.50,1.30,0.20; found H multiplet by label chem shifts differ by 0.000000 ppm\
+;7.8580, L=H4;found no H multiplet for this H\
+7.4910, S=td, L=H5, E=3583265.9613, J=8.00,7.50,1.20; found H multiplet by label chem shifts differ by 0.000000 ppm\
+;7.4910, L=H6;found no H multiplet for this H\
+;7.8580, L=H7;found no H multiplet for this H\
+;7.4910, L=H8;found no H multiplet for this H\
+;7.4910, L=H9;found no H multiplet for this H\
+;7.8580, L=H10;found no H multiplet for this H\
+
+>  <NMREDATA_1D_13C>
+Larmor=125.757789\
+Pulseprogram=zgpg30 ;optional in V1\
+Spectrum_Location=file:djnaphtalene/13/pdata/1/\
+;nothing at 127.8835 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:85.856785)\
+;nothing at 133.4585 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:80.281855)\
+;nothing at 133.4585 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:80.281855)\
+;nothing at 127.8835 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:85.856785)\
+;nothing at 125.8232 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:87.917118)\
+;nothing at 125.8232 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:87.917118)\
+;nothing at 127.8835 ppm , for signal 7; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:85.856785)\
+;nothing at 125.8232 ppm , for signal 8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:87.917118)\
+;nothing at 125.8232 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:87.917118)\
+;nothing at 127.8835 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:85.856785)\
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.130008173447\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsi ;optional in V1\
+Spectrum_Location=file:djnaphtalene/12/pdata/1/\
+1/H1\
+4/H4\
+5/H5\
+6/H6\
+7/H7\
+8/H8\
+9/H9\
+10/H10\
+
+$$$$
