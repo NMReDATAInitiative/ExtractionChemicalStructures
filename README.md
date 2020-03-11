@@ -3,9 +3,9 @@ Important chemistry files including chemical structures
 
 extension|source|Extraction tool
 ----|----|---
-.cdx|ChemDraw|OpenBabel
+.cdx|ChemDraw|[OpenBabel](#OpenBabel)
 .g03|Gaussia98/03|[OpenBabel](#OpenBabel)
-.sdf|multiple open sources|[OpenBabel](#OpenBabel)
+.sdf|multiple open sources|[OpenBabel](#OpenBabel2)
 .mnova|MestreNova|[Mnova](#Mnova)
 
 ## OpenBabel
