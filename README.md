@@ -1,6 +1,6 @@
 # Chemical structures in chemistry
 In chemistry representation of the structure of componds is essential. 
-We shall distinguish often called "2d" or "flat" structure that are drawing where 3D features are represented using special notation.
+We shall distinguish often called "2d" or "flat" structure that are drawing where 3D features are represented using special notation from full-flesh 3D structures where the X, Y, Z coordinates are specified. 
 ## 2D structure
 In most case, compounds are represented as a projection on the surface where they are drawn. The knowledge of the chemist makes it clear that the three bonds of the highligheted cabon are not on the same plane because a fourth bond with a hydrogen atom is implict. This is the reprentation of alanine. If the chemists wants to specify, which of the enantiomer he wants to represent, he uses a filled triangle or dashed triangle to indicate that the bonds is pointing up or down respectively. These represent L-alanine and D-alanine respectively.
 
