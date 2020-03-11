@@ -1,21 +1,21 @@
 # Chemical structures in chemistry files
 Important chemistry files including chemical structures
 
-extension|source|Extraction tool
+Extension|Source|Extraction tool
 ----|----|---
-.cdx|ChemDraw|[OpenBabel2](#openbabel)
-.g03|Gaussia98/03|[OpenBabel](#OpenBabel)
-.sdf|multiple open sources|[OpenBabel](#OpenBabel2)
-.mnova|MestreNova|[Mnova](#Mnova)
+.cdx|ChemDraw|[OpenBabel](#openbabel)
+.g03|Gaussia98/03|[OpenBabel](#openbabel)
+.sdf|multiple open sources|[OpenBabel](#openbabel)
+.mnova|MestreNova|[Mnova](#mnova)
 
 ## OpenBabel
-conversion into .mol file using [OpenBabel](https://open-babel.readthedocs.io/en/latest/)
+Conversion into .mol file using [OpenBabel](https://open-babel.readthedocs.io/en/latest/)
 ```
 obabel inputfile.sdf -O outputfile.mol
 obabel inputfile.cdx -O outputfile.mol
 obabel -ig03 inputfile.log -O outputfile.mol
 ```
-conversion into image using OpenBabel
+Conversion into images using OpenBabel
 ```
 obabel outputfile.mol -O outputfile.png
 ```
