@@ -23,11 +23,6 @@ extension|source|Extraction tool
 .cdx|ChemDraw|[OpenBabel](http://openbabel.org/wiki/Main_Page)
 .mnova|MestreNova|[Mnova](https://mestrelab.com/download/mnova/)
 
-extension|source|Visualization tool
-----|----|---
-.mol|any source|[JSmol](http://wiki.jmol.org/index.php/Jmol_JavaScript_Object#JSmol)
-
-
 ## OpenBabel
 
 conversion of .cdx 
@@ -42,3 +37,8 @@ Extraction done using a script called from unix:
 /usr/bin/mnova "NMReDATAExporter.qs" //for NMReDATA - this script my be a starting point for a user-defined script to write
 babel -isdf  'mymols.cdx' -omol 'outputfile.mol' //if the data are not in .mol format already
 ```
+# Visualization of .mol files
+
+extension|source|Visualization tool
+----|----|---
+.mol|any source|[JSmol](http://wiki.jmol.org/index.php/Jmol_JavaScript_Object#JSmol)
