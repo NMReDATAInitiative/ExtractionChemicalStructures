@@ -21,14 +21,18 @@ Conversion into images using OpenBabel
 ```
 obabel outputfile.mol -O outputfile.png
 ```
+A separete web service returning the .mol or the .png when sending any other format would simplify interfacing and modularity.
+
 ## Mnova
-[Mnova](https://mestrelab.com/download/mnova/) requires a [licence](https://www.unige.ch/sciences/chiorg/mnova/).
-Extraction done using a script called from unix:
+The [Mnova](https://mestrelab.com/download/mnova/) software requires a [licence](https://www.unige.ch/sciences/chiorg/mnova/).
+Extraction of elements from the .mnova files can be done using scripts called from unix:
 ```
-/usr/bin/mnova "/usr/username/myScript.qs" -sf "myFunction",0.1,10,true,off // generic for user-defined script
-/usr/bin/mnova "NMReDATAExporter.qs" //for NMReDATA - this script my be a starting point for a user-defined script to write
+/usr/bin/mnova "/usr/username/myScript.qs" -sf "myFunction",0.1,10,true,off // generic call of function from a for user-defined script
+/usr/bin/mnova "NMReDATAExporter.qs" //for NMReDATA - this script my be a starting point for automated extraction. We may have to remove user interaction from this script.
 babel -isdf  'mymols.cdx' -omol 'outputfile.mol' //if the data are not in .mol format already
 ```
+A web service returning the .mol when sending a .mnova would simplify interfacing and modularity.
+When running scripts, the graphical interface is disabled.
 # Visualization of .mol files
 
 Extension|Source|Visualization tool|Demo
