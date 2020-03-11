@@ -18,9 +18,8 @@ Important chemistry files including chemical structures
 
 extension|source|Extraction tool
 ----|----|---
-.mol|multiple source|OpenBabel
-.cdx|ChemDraw|[OpenBabel](http://openbabel.org/wiki/Main_Page
-)
+.mol|multiple source|[OpenBabel](http://openbabel.org/wiki/Main_Page)
+.cdx|ChemDraw|[OpenBabel](http://openbabel.org/wiki/Main_Page)
 .mnova|MestreNova|[Mnova](https://mestrelab.com/download/mnova/)
 
 extension|source|Visualization tool
