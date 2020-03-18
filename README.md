@@ -43,6 +43,8 @@ Extension|Source|Visualization tool|Demo
 
 [More info about JSmol](http://wiki.jmol.org/index.php/JSmol)
 
+[More examples of visualization](https://gr-jeannerat-unige.github.io/macrolide-antibiotics/)
+
 # Note about chemical structures in chemistry
 In chemistry representation of the structure of componds is essential. 
 We shall distinguish often called "2d" or "flat" structure that are drawing where 3D features are represented using special notation from full-flesh 3D structures where the X, Y, Z coordinates are specified. 
