@@ -43,7 +43,7 @@ Extension|Source|Visualization tool|Demo
 
 [More info about JSmol](http://wiki.jmol.org/index.php/JSmol)
 
-[More examples of visualization](https://gr-jeannerat-unige.github.io/macrolide-antibiotics/)
+[More examples of visualization](https://gr-jeannerat-unige.github.io/macrolide-antibiotics/page1)
 
 # Note about chemical structures in chemistry
 In chemistry representation of the structure of componds is essential. 
