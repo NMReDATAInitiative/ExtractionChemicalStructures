@@ -38,7 +38,7 @@ When running scripts, the graphical interface is disabled.
 
 Extension|Source|Visualization tool|Demo
 ----|----|---|---
-.mol|2D structure|[JSme](https://www.peter-ertl.com/jsme/)|[Structure of menthol](jsme_minimal) 
+.mol|2D structure|[JSme](https://www.peter-ertl.com/jsme/)|[Structure of menthol](menthol) 
 .mol|2D structure|[Kekule](https://partridgejiang.github.io/Kekule.js/)|[Structure of menthol](https://gr-jeannerat-unige.github.io/macrolide-antibiotics/page15) 
 .mol|3D structure|[JSmol](http://wiki.jmol.org/index.php/Jmol_JavaScript_Object#JSmol)|<script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jmol.php?source=https://static.molinstincts.com/sdf_3d/cholesterol-3D-structure-CT1001897301.sdf&link=3D structure of cholesterol"></script>
 
