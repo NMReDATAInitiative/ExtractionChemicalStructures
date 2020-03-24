@@ -48,6 +48,4 @@
 
 <div id="jsme_container"></div>
 
-
-
-</html>
+from [JSme](https://www.peter-ertl.com/jsme/)
