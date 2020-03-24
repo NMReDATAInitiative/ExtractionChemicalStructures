@@ -3,7 +3,7 @@
 <head></head>
 
 <body>
-    <script type="text/javascript" language="javascript" src="jsme/jsme.nocache.js"></script>
+    <script type="text/javascript" language="javascript" src="../jsme/jsme.nocache.js"></script>
 
     <script>
 
@@ -37,10 +37,10 @@
         //this function will be called after the JavaScriptApplet code has been loaded.
         function jsmeOnLoad() {
             jsmeApplet = new JSApplet.JSME("jsme_container", "180px", "140px", {
-                "options": "depict depictAction star"
+                "options": "depict"
             });
 
-            var fileData = getFile('menthol-2d.mol')
+            var fileData = getFile('../menthol-2d.mol')
             jsmeApplet.readMolFile(fileData);
 
             var actionMarked = 105;
@@ -50,6 +50,7 @@
         }
     </script>
 
+<div id="jsme_container"></div>
 
 </body>
 
