@@ -1,4 +1,4 @@
-# Inline example of 2D Jsme structure
+# Inline example of 2D JSME structure
 <script type="text/javascript" language="javascript" src="jsme/jsme.nocache.js"></script>
 
 <script>
@@ -48,4 +48,4 @@
 
 <div id="jsme_container"></div>
 
-from [JSme](https://www.peter-ertl.com/jsme/)
+from [JSME](https://www.peter-ertl.com/jsme/)
