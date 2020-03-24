@@ -1,3 +1,4 @@
+# Inline example of JSmol 3D structure
 <script type="text/javascript" src="src/JSmol.min.js"></script>
 <script type="text/javascript" src="src/Jmol2.js"></script>
 <script type="text/javascript">
