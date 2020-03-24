@@ -1,4 +1,4 @@
-# Inline example of Jsme structure
+# Inline example of 2D Jsme structure
 <script type="text/javascript" language="javascript" src="jsme/jsme.nocache.js"></script>
 
 <script>
