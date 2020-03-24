@@ -38,11 +38,57 @@ When running scripts, the graphical interface is disabled.
 
 Extension|Source|Visualization tool|Demo
 ----|----|---|---
-.mol|2D structure|[JSme](https://www.peter-ertl.com/jsme/)|[Structure of indole](https://www.simolecule.com/cdkdepict/depict/bow/svg?smi=indole%0A%20%20NextMove10101914192D%0A%0A%20%209%2010%20%200%20%200%20%200%20%200%20%200%20%200%20%200%20%200999%20V2000%0A%20%20%20%201.7200%20%20%20-1.2100%20%20%20%200.0000%20N%20%20%200%20%200%0A%20%20%20%202.6000%20%20%20-0.0000%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20%201.7200%20%20%20%201.2100%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20%200.2900%20%20%20%200.7500%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20-1.0100%20%20%20%201.5000%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20-2.3100%20%20%20%200.7500%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20-2.3100%20%20%20-0.7500%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20-1.0100%20%20%20-1.5000%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%20%20%200.2900%20%20%20-0.7500%20%20%20%200.0000%20C%20%20%200%20%200%0A%20%201%20%202%20%201%20%200%0A%20%202%20%203%20%202%20%200%0A%20%203%20%204%20%201%20%200%0A%20%204%20%205%20%202%20%200%0A%20%205%20%206%20%201%20%200%0A%20%206%20%207%20%202%20%200%0A%20%207%20%208%20%201%20%200%0A%20%208%20%209%20%202%20%200%0A%20%201%20%209%20%201%20%200%0A%20%204%20%209%20%201%20%200%0AM%20%20END%0A) 
+.mol|2D structure|[JSme](https://www.peter-ertl.com/jsme/)|[Structure of indole](jsme_minimal.html) 
 .mol|2D structure|[Kekule](https://partridgejiang.github.io/Kekule.js/)|[Structure of menthol](https://gr-jeannerat-unige.github.io/macrolide-antibiotics/page15) 
 .mol|3D structure|[JSmol](http://wiki.jmol.org/index.php/Jmol_JavaScript_Object#JSmol)|<script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jmol.php?source=https://static.molinstincts.com/sdf_3d/cholesterol-3D-structure-CT1001897301.sdf&link=3D structure of cholesterol"></script>
 
+<script type="text/javascript" language="javascript" src="jsme/jsme.nocache.js"></script>
 
+<script>
+
+        function getFile(fileName) {
+            oxmlhttp = null;
+            try {
+                oxmlhttp = new XMLHttpRequest();
+                oxmlhttp.overrideMimeType("text/xml");
+            }
+            catch (e) {
+                try {
+                    oxmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+                }
+                catch (e) {
+                    //return null;
+                    return "failed MS<BR>";
+                }
+            }
+            if (!oxmlhttp) return "failed to create object<BR>";
+            try {
+                oxmlhttp.open("GET", fileName, false);
+                oxmlhttp.send(null);
+            }
+            catch (e) {
+                return "failed to get webpage<BR>";
+            }
+            return oxmlhttp.responseText;
+        }
+
+
+        //this function will be called after the JavaScriptApplet code has been loaded.
+        function jsmeOnLoad() {
+            jsmeApplet = new JSApplet.JSME("jsme_container", "180px", "140px", {
+                "options": "depict depictAction star"
+            });
+
+            var fileData = getFile('menthol-2d.mol')
+            jsmeApplet.readMolFile(fileData);
+
+            var actionMarked = 105;
+            jsmeApplet.setAction(actionMarked);
+
+
+        }
+</script>
+<div id="jsme_container"></div>
 
 [Examples](https://gr-jeannerat-unige.github.io/macrolide-antibiotics/page1) using [JSmol](http://wiki.jmol.org/index.php/JSmol) and [Kekude](https://partridgejiang.github.io/Kekule.js).
 
