@@ -33,9 +33,9 @@
         //this function will be called after the JavaScriptApplet code has been loaded.
         function jsmeOnLoad() {
             jsmeApplet = new JSApplet.JSME("jsme_container", "180px", "140px", {
-                "options": "depict multipart reaction"
+                "options": "depict multipart reaction border"
             });
-
+// other options : https://www.molinspiration.com/jme/doc/jme_functions.html number
             var fileData = getFile('menthol-2d.mol')
             jsmeApplet.readMolFile(fileData);
 
