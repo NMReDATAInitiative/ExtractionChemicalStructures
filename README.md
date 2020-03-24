@@ -42,57 +42,7 @@ Extension|Source|Visualization tool|Demo
 .mol|2D structure|[Kekule](https://partridgejiang.github.io/Kekule.js/)|[2D structure of menthol](https://gr-jeannerat-unige.github.io/macrolide-antibiotics/page15) 
 .mol|3D structure|[JSmol](http://wiki.jmol.org/index.php/Jmol_JavaScript_Object#JSmol)|[3D structure of cholesterol](cholesterol.md)|
 
-<script type="text/javascript" language="javascript" src="jsme/jsme.nocache.js"></script>
-
-<script>
-
-        function getFile(fileName) {
-            oxmlhttp = null;
-            try {
-                oxmlhttp = new XMLHttpRequest();
-                oxmlhttp.overrideMimeType("text/xml");
-            }
-            catch (e) {
-                try {
-                    oxmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-                }
-                catch (e) {
-                    //return null;
-                    return "failed MS<BR>";
-                }
-            }
-            if (!oxmlhttp) return "failed to create object<BR>";
-            try {
-                oxmlhttp.open("GET", fileName, false);
-                oxmlhttp.send(null);
-            }
-            catch (e) {
-                return "failed to get webpage<BR>";
-            }
-            return oxmlhttp.responseText;
-        }
-
-
-        //this function will be called after the JavaScriptApplet code has been loaded.
-        function jsmeOnLoad() {
-            jsmeApplet = new JSApplet.JSME("jsme_container", "180px", "140px", {
-                "options": "depict depictAction star"
-            });
-
-            var fileData = getFile('menthol-2d.mol')
-            jsmeApplet.readMolFile(fileData);
-
-            var actionMarked = 105;
-            jsmeApplet.setAction(actionMarked);
-
-
-        }
-</script>
-<div id="jsme_container"></div>
-
-[Examples](https://gr-jeannerat-unige.github.io/macrolide-antibiotics/page1) using [JSmol](http://wiki.jmol.org/index.php/JSmol) and [Kekude](https://partridgejiang.github.io/Kekule.js).
-
-[Demo using React](https://zakodium.github.io/react-ocl)
+[Example based on React](https://zakodium.github.io/react-ocl)
 
 # Note about chemical structures in chemistry
 In chemistry representation of the structure of componds is essential. 
