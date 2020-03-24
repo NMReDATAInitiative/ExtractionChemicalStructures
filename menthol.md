@@ -33,7 +33,7 @@
         //this function will be called after the JavaScriptApplet code has been loaded.
         function jsmeOnLoad() {
             jsmeApplet = new JSApplet.JSME("jsme_container", "180px", "140px", {
-                "options": "depict"
+                "options": "depict multipart reaction"
             });
 
             var fileData = getFile('menthol-2d.mol')
