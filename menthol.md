@@ -1,8 +1,5 @@
-# Inline example of 2D JSME structure
 <script type="text/javascript" language="javascript" src="jsme/jsme.nocache.js"></script>
-
 <script>
-
         function getFile(fileName) {
             oxmlhttp = null;
             try {
@@ -45,7 +42,5 @@
 
         }
 </script>
-
 <div id="jsme_container"></div>
 
-from [JSME](https://www.peter-ertl.com/jsme/)
