@@ -1,7 +1,7 @@
 # Chemical structures in chemistry files
 Important chemistry files including chemical structures
 
-File extension|Origin|Extraction tool|Example|converted into .mol file (not active yet...)
+File extension|Origin|Conversion into .mol file|Example|converted into .mol file (not active yet...)
 ----|----|---|---|---
 .cdx .cdxml|ChemDraw|[OpenBabel](#openbabel)|[benzoic.cdx](benzoic.cdx) [structure.cdxml](structure.cdxml) |*benzoic acid in .mol format*
 .log .out .g09|Gaussia98/03/09/16|[OpenBabel](#openbabel)|[melezitose_betternmrJ.log](melezitose_betternmrJ.log)|
@@ -11,6 +11,8 @@ File extension|Origin|Extraction tool|Example|converted into .mol file (not acti
 .mnova|MestreNova|[Mnova](#mnova)|[vaniline.mnova](Vaniline_attributed.mnova)|
 
 Visualisation can be done after [conversion](#openbabel) into the open .mol files format. The .mol file can be displayed using a specialized tools (nice for <script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jmol.php?source=https://static.molinstincts.com/sdf_3d/cholesterol-3D-structure-CT1001897301.sdf&link=3D structures"></script>) or as a fixed image after [conversion](#openbabel) of .mol into .png (or other format).
+
+[Distinguish](distinguis2D3Dmol) 2D from 3D .mol (or .sdf) files.
 
 ## OpenBabel
 Conversion into .mol file using [OpenBabel](https://open-babel.readthedocs.io/en/latest/)
@@ -51,7 +53,7 @@ We shall distinguish often called "2d" or "flat" structure that are drawing wher
 ## 2D structure
 In most case, compounds are represented as a projection on the surface where they are drawn. The knowledge of the chemist makes it clear that the three bonds of the highligheted cabon are not on the same plane because a fourth bond with a hydrogen atom is implict. This is the reprentation of alanine. If the chemists wants to specify, which of the enantiomer he wants to represent, he uses a filled triangle or dashed triangle to indicate that the bonds is pointing up or down respectively. These represent L-alanine and D-alanine respectively.
 
-![alt text](ala.png)
+![chirality of alanine](images/ala.png)
 
 Converting a 2D structure into a 3D structure is not problematic when the stereochemistry is fully determined. If the type of alanine (D- or L-) is not fully determined (something that may reflect a genuine lack of information) it is better not to use 3D structures, or to generate all the possible structures and give the chemist the choice among them. It means that one should not systematically convert "2D" into "3d" structures - only do it when it is safe.
 
