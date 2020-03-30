@@ -7,7 +7,7 @@ File extension|Origin|Conversion into .mol file|Example|converted into .mol file
 .log .out .g09|Gaussia98/03/09/16|[OpenBabel](#openbabel)|[melezitose_betternmrJ.log](melezitose_betternmrJ.log)|
 .sdf|multiple open sources|[OpenBabel](#openbabel)|[compound1.nmredata.sdf](compound1.nmredata.sdf)|
 .mol|multiple open sources|no conversion|[2D .mol/.sdf (most frequent)](menthol-2d.mol)|
-.mol|multiple open sources|no conversion|[3D .mol/.sdf 3D](cholesterol-3D.sdf)|
+.mol|multiple open sources|no conversion|[3D .mol/.sdf](cholesterol-3D.sdf)|
 .mnova|MestreNova|[Mnova](#mnova)|[vaniline.mnova](Vaniline_attributed.mnova)|
 
 Visualisation can be done after [conversion](#openbabel) into the open .mol files format. The .mol file can be displayed using a specialized tools (nice for <script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jmol.php?source=https://static.molinstincts.com/sdf_3d/cholesterol-3D-structure-CT1001897301.sdf&link=3D structures"></script>) or as a fixed image after [conversion](#openbabel) of .mol into .png (or other format).
