@@ -12,7 +12,7 @@ File extension|Origin|Conversion into .mol file|Example|converted into .mol file
 
 Visualisation can be done after [conversion](#openbabel) into the open .mol files format. The .mol file can be displayed using a specialized tools (nice for <script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jmol.php?source=https://static.molinstincts.com/sdf_3d/cholesterol-3D-structure-CT1001897301.sdf&link=3D structures"></script>) or as a fixed image after [conversion](#openbabel) of .mol into .png (or other format).
 
-[Distinguish](distinguis2D3Dmol) 2D from 3D .mol (or .sdf) files.
+Distinguish[2D from 3D](distinguish2D3Dmol) .mol (or .sdf) files.
 
 ## OpenBabel
 Conversion into .mol file using [OpenBabel](https://open-babel.readthedocs.io/en/latest/)
